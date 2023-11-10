@@ -1,0 +1,84 @@
+*{box-sizing: border-box;}
+body{
+    width: 100%;
+    background-image: url(./R.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 160%;
+    /* overflow: hidden; */
+}
+#div1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 10% 10%;
+    column-gap: 5%;
+    padding-top: 5%;
+    box-shadow: 10px 10px 10px black;
+    position: sticky;
+    top: 0;
+    /* margin-left: -2%; */
+    left: -2%;
+    background-color: white;
+}
+#img1{
+    margin-left: -4%;
+    width: 45%;
+    margin-top: -7%;
+}
+#icon1,#icon2{
+   font-size: 200%; 
+   /* margin-left: -100%; */
+   /* margin-bottom: 50%; */
+   margin-top: 4%;
+}
+#p1{
+    font-size: 200%;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Charm';
+    color: rgb(13, 166, 177);
+}
+#p2{
+    font-size: 350%;
+    text-align: center;
+    font-family: 'Charm';
+    color: rgb(13, 166, 177);
+    visibility: hidden;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: suc;
+    /* visibility: hidden; */
+
+}
+#done{
+    width:95%;
+    margin-top: 2%;
+    padding: 5%;
+    /* border: 3px solid black; */
+}
+#check{
+    /* background-color: rgb(29, 44, 156); */
+    color: rgba(13, 166, 177, 1 );
+    font-size: 2000%;
+    padding:5% ;
+    width: 100% ;
+    margin-top: 100%;
+    visibility: hidden;
+    position: relative;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+@keyframes check{
+    50%{
+        visibility:visible;
+        margin-top: 1%;
+    }
+}
+@keyframes suc{
+    50%{
+        margin-top: 2%;
+        visibility: visible;
+    }
+}
